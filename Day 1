@@ -1,0 +1,11 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    float price1=20;
+	    float price2=30;
+	    float price3=40;
+	    float taxamount=10;
+	    float finalamount=price1+price2+price3+taxamount;
+		System.out.println("final amount : "+finalamount);
+	}
+}
