@@ -1,0 +1,19 @@
+import java.util.Scanner; 
+class Main {
+  public static void main(String[] args) {
+    Scanner Scan=new Scanner(System.in);
+    String d1= Scan.next();
+    String d2= Scan.next();
+    
+    int lenght1=d1.length();
+    int lenght2=d2.length();
+    String last2for2= d2.substring(lenght2-2, lenght2);
+    String last2for1= d1.substring(lenght1-2, lenght1);
+    String first2for2= d2.substring(0, 2);
+    String first2for1= d1.substring(0, 2);
+    String result1= last2for2+d1.substring(2, lenght1-2)+first2for2;
+    String result2= last2for1+d2.substring(2, lenght1-2)+first2for1;
+    System.out.println("result1 "+result1);
+    System.out.println("result2"+result2);
+    }
+}
