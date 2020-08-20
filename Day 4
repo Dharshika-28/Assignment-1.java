@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main{
+    private static Scanner sc;
+	public static void main(String[] args) 
+	{
+	int Size,d;
+	int evenCount=0,oddCount=0;
+	sc=new Scanner(System.in);
+	System.out.println("enter number of elements in an array:");
+	Size=sc.nextInt();
+	
+	int [] a= new int [Size];
+	System.out.println("enter"+Size+"elements of an array:");
+	for (d=0;d<Size;d++){
+	    a[d]=sc.nextInt();
+     	}
+	for (d=0;d<Size;d++){
+	    if (a[d]%2==0){
+	        evenCount++;
+	    }
+	    else{
+	        oddCount++;
+	    }
+	
+	    System.out.println("\n total number of even number in this array ="+evenCount);
+	    System.out.println("\n total number of odd number in this array ="+oddCount);
+      }
+      }
