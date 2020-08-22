@@ -1,0 +1,21 @@
+public class Human
+{
+    String painting;
+    String dancing;
+    String drawing;
+
+public Human(String p,String d,String dr){
+   String painting= p;
+   String dancing= d;
+   String drawing= dr;
+    }
+public void display(){
+    System.out.println("painting"+painting);
+    System.out.println("dancing"+dancing);
+    System.out.println("drawing"+drawing);
+    }
+}
+public class Human28 {
+    Human human1 = new human(good,verygood,excellent);
+    human1.display();
+	}
