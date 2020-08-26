@@ -1,0 +1,38 @@
+public abstract class Bird
+{
+	int height;
+	int weight;
+	public void sound();
+	System.out.println("sound....");
+	public abstract void eating(){
+    System.out.println("eating");
+    }
+}
+public interface Flybehavior{
+    public void fly();
+}
+public interface Swimbehavior{
+    public void swim();
+}
+public class Parrot extends Bird implements Flybehavior{
+   public void sound(){
+       System.out.println("screeching");
+   }
+    public void fly(){
+        System.out.println("Parrot flying");
+    }
+}
+public class Ostrich extends Bird
+{
+    public void sound (){
+        System.out.println("hissing");
+    }
+}
+public class penguin extends Bird implements Swimbehavior{
+    public void sound(){
+        System.out.println("honking")
+    }
+    public void swim(){
+        System.out.println("penguin swiming");
+    }
+}
